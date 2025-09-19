@@ -1,0 +1,15 @@
+﻿{
+  "build": {
+    "builder": "NIXPACKS",
+    "nixpacksPlan": {
+      "phases": {
+        "install": {
+          "cmds": ["pip install -r backend/requirements.txt"]
+        },
+        "start": {
+          "cmd": "python backend/main.py"
+        }
+      }
+    }
+  }
+}
